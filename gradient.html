@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        /* (1) linear gradient 
+           (2) radient-gradient-radious ma fill 
+           (3) conic-garidennt
+            */
+            :root   
+            /* global variable */
+            {
+                --p:purple;
+            }
+        div
+        {
+            height: 200px;
+            width:200px;
+            border: 5px solid black;
+            margin:20px;
+        }
+         /*  linear gardient 
+         right-right thi feel
+         top-right=45deg =ma bharay color
+           
+         */
+
+      #r
+      {
+
+            /* background-image:linear-gradient(45deg ,purple,orange,blue,green,yellow,red,darkgreen) ;
+             background-image: linear-gradient(red,yellow ,purple 15%); */
+            background-image: linear-gradient(darkorange,white,darkgreen);
+             position: relative;
+        }
+        #i
+        {
+            background-image:radial-gradient(circle,yellow,orange,var(--p));
+            width:400px;
+        }
+        #d
+        {
+            background-image:conic-gradient(from 90deg,yellow ,purple,aqua,yellow);
+        }
+        #cg1
+        {
+             background-image: conic-gradient(red 0deg,red 90deg,green 90deg,green 180deg,blue 180deg,blue 270deg,yellow 270deg,yellow 360deg);
+            border-radius: 50%; 
+            /* 
+              background-image: conic-gradient(red 90deg,green 180deg,blue 270deg,yellow 360deg);
+            border-radius: 50%; 
+            transition are not use non gradient but animation are apply
+            */
+            transition:all 5s;
+
+        }
+        #cg1:hover
+        {
+            height: 250px;
+            width:250px;
+            background-image: radial-gradient(red,green,blue,yellow);
+        
+        }
+        #ag
+        {
+            /* local variable */
+            --r:blue;
+            border-radius: 50%;
+            height: 50px;
+            width:50px;
+            border:2px solid blue;
+            position:absolute;
+            left:55px;
+            top:60px;
+            background-image:repeating-conic-gradient(var(--r) 0deg,var(--r) 7.5deg,white 7.5deg,white 15deg);
+            animation-name:"riddhi";
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+
+          
+            
+        }
+        @keyframes riddhi
+        {
+            from{
+                transform: rotate(0deg);
+
+            }
+           to{
+            transform: rotate(360deg);
+           }
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="g" id="r">
+          <div id="ag"></div>
+    </div>
+   
+    <div class="g" id="i"></div>
+   
+    
+    <div class="g" id="d"></div>
+    <div class="g" id="cg1"></div>
+   
+</body>
+</html>

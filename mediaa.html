@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mediaa</title>
+    <style>
+        /* 
+        media query->screen|print|screen-reader
+                   ->screen-size(min-width,max-width,max-heigth,min-heighth)
+                     orianttion:portrait|landscape
+                     and ,or,only, not are used 
+
+        */
+        body
+        {
+            background-color: yellow;
+        }
+        @media screen and (max-width:400px) 
+        {
+            body
+            {
+                background-color: lime;
+
+
+            }
+        }
+        @media screen and (min-width:500px)
+        {
+           body{
+                background-color: palevioletred;
+            }
+        }
+        @media screen and (orientation:landscape)
+         {
+            h1{
+                text-align: center;
+                color: aqua;
+                transition: all 2s;
+            }
+            h1:hover{
+                transform: scale(2);
+            }
+
+            
+        }
+        @media print{
+            body,h1
+            {
+                background-color: palegoldenrod;
+                color: white;
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Good Morning</h1>
+</body>
+</html>

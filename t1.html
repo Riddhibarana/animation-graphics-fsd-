@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>t1</title>
+    <style>
+        /*
+        task->1
+        create 200px box verticly center in your page.it has bg =purple
+        amd border=magenta .on hover it's bg changes to aqua borde blue ,it becomas a circle that
+        double in size while moving on a straight line and rotattoing .this must  take place in 7s .
+
+        task->2
+        below it create a form 
+        when cursor is inside textbox it increases insize 3 times and give bg=olive
+        ,color=yellow nd uppercase in 5s .when button is hover it gets double in size ,10px rounded border
+        and blue color shadow on right 
+     */
+     body
+     {
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+     }
+   
+     #b1:hover
+     {
+        background-color: aqua;
+        border: 5px solid blue; 
+        border-radius: 50%;
+        transform: translateX(1000px) scale(2) rotate(500deg);
+     }
+     #b1
+     {
+        height: 200px;
+        width: 200px;
+        background-color: purple;
+        border: 5px solid magenta;
+        transition: all 7s;
+
+     }
+     #un:focus
+     {
+        transform: scale(3);
+        background-color: olive;
+        color: yellow;
+        text-transform: uppercase;
+
+     }
+     #un
+     {
+        transition: all 5s;
+     }
+     #sb:hover{
+        transform: scale(1.5);
+        border-radius: 10px;
+        box-shadow: 10px 10px 5px blue;
+
+     }
+     #sb
+     {
+        transition: all 5s;
+     }
+    </style>
+</head>
+<body>
+    <div id="b1"></div>
+    <br><br>
+    <br><br><br>
+    <div>
+    <form>
+        <fieldset>
+            <lable for="un">Username:</lable>
+            <input type="text" id="un" name="un">
+        </fieldset>
+        <input type="button" value="submit" id="sb">
+    </form>
+    </div>
+</body>
+</html>

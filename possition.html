@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>possition</title>
+    <style>
+        /*
+        position:static|relative|absolute|fixed|stickly
+        top:
+        left:
+        bottom:
+        right:
+        when position static top bottom  left do not move
+        when posstion relative top bottom are relted to itself
+        if top and bottom both are then hugher priority top(top>bottom)
+        if left and right both are thenhigher priority left(left>rigt)
+         */
+        *
+        {
+            margin: 0px;
+        }
+        #a
+        {
+            height: 200px;
+            width: 200px;
+            background-color: palevioletred;
+            border:2px solid brown;
+            text-align: center;
+            line-height: 200px;
+            position: fixed;
+           /* top:200px;*/
+            /* left:200px; */
+            bottom: 100px;
+            right: 100px;
+        }
+        #p
+        {
+            height: 400px;
+            width: 700px;
+            border: 2px solid green;
+            position: relative;
+        }
+        #c
+        {
+            height: 70px;
+            width: 100px;
+            background-color: aqua;
+            border:2px solid red;
+            position: fixed;
+            bottom: 0px;
+            right: 0px;
+        }
+        #s
+        {
+            border:2px solid black;
+            background-color: pink;
+            padding: 10px;
+            position: sticky;
+            top:0px;
+        }
+        #d1
+        {
+            height: 200px;
+            width: 200px;
+            position: relative;
+            background-color: red;
+            top:100px;
+            left:150px;
+            border: 2px solid black;
+            z-index: 4;
+            opacity: 0.5;
+        }
+          #d2
+        {
+            height: 200px;
+            width: 200px;
+            position: relative;
+            background-color: green;
+            bottom:50px;
+            right:-40px;
+            z-index: 3;
+            border: 2px solid black;
+        }
+          #d3
+        {
+            height: 200px;
+            width: 200px;
+            position: relative;
+            background-color: blue;
+            bottom: 170px;
+            right: -180px;
+            border: 2px solid black;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <div id="a">Hello</div>
+    <div id="p">
+        <div id="c">
+            Hello
+        </div>
+    </div>
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et exercitationem veniam repellendus modi error, enim quae quasi? Impedit enim maxime est iusto ipsam quam ab omnis dolorum officiis? Ratione omnis accusamus neque, maxime placeat velit reprehenderit dolorum consequatur vero corrupti ducimus minus alias, repellat, quidem reiciendis? Nihil ipsa quaerat neque nesciunt. Atque perspiciatis minima maiores eum culpa quasi, ipsam aliquam. Est exercitationem natus velit omnis aliquid temporibus nihil, dolores quia vel neque quidem hic error obcaecati excepturi similique quam inventore placeat tenetur officia qui voluptatibus earum asperiores! Provident deserunt explicabo eaque voluptatibus voluptate corrupti harum veniam laboriosam iste neque illum soluta, repellendus, nobis quo tempore illo quasi dicta! Cupiditate delectus exercitationem vero minus velit aliquid labore. Optio
+            <div id="s">I am Sticky</div>
+            repudiandae illo maxime quos ex sunt quae enim aliquid, ea, impedit molestias reprehenderit illum eos asperiores cum possimus perspiciatis distinctio officiis rem veniam maiores ab nesciunt? Illum dolorum, in possimus doloremque inventore recusandae distinctio incidunt aliquid vitae modi doloribus voluptatum numquam amet nam alias facilis repellendus velit repellat tenetur perferendis placeat culpa? Unde atque accusamus nisi nemo dolorem sit quaerat? Consequatur non necessitatibus dolores, quibusdam optio nulla totam voluptatibus rem obcaecati, alias impedit accusantium ipsum similique nobis, soluta aliquid laudantium magnam voluptatum hic reprehenderit harum. Nobis labore doloremque ut doloribus, incidunt earum fugit maiores laboriosam accusamus est ex nam sit officia optio debitis. Error reiciendis maxime hic a nihil laudantium voluptatibus impedit reprehenderit, tempore fuga? Non, totam soluta? Ipsum quasi corporis debitis nihil amet, officiis adipisci molestias numquam excepturi, dolores harum ipsam totam vero quisquam quas doloremque sequi soluta laudantium et ut repellat eos vel. Eligendi, aperiam tempore? Obcaecati quae assumenda iusto eum, nisi quas omnis commodi magni repellendus nostrum et ratione, modi illum cumque adipisci eius consequatur libero pariatur ullam voluptates hic rerum? Dignissimos qui doloribus voluptates voluptatem nisi voluptas, eius praesentium, ad assumenda, adipisci veritatis delectus quaerat voluptatibus! Perspiciatis dolores corrupti, rerum, dolorem ipsa sed ea modi possimus aliquid quae nemo ipsam et iste iure consectetur autem nulla molestias ullam itaque voluptas enim numquam optio aperiam! Unde iusto maxime repellendus alias. Repellat neque eveniet recusandae iure ab culpa temporibus fugit nulla totam nihil dolorum expedita molestiae sequi aliquam labore asperiores necessitatibus, esse delectus aliquid quas. Vitae, corporis aut. Nisi aut incidunt qui voluptatibus cum optio voluptatum. Ipsam mollitia magni voluptas eaque ex labore facere. Quae amet ipsa similique dolore? Suscipit quos illo atque sequi repellat quam ex quod a blanditiis corrupti, commodi autem mollitia, cum officia magnam! Eaque commodi placeat nam consequatur eos dolorem molestiae dicta ullam ipsa tenetur quia totam, nemo rem, blanditiis in accusantium quasi vero quae incidunt fugit nesciunt reprehenderit odio! Quisquam, dolore deserunt incidunt soluta autem voluptatum, quae repellat, et sapiente nihil laudantium alias. Nostrum ipsam maxime mollitia distinctio. Dolor impedit at esse nam ex ratione, iure illo expedita dolorum vero, amet nobis voluptas doloribus doloremque minima quam dicta provident sit alias totam exercitationem odit ullam assumenda consectetur. Itaque molestiae ipsum nobis excepturi similique dicta amet tempora quos illo rerum dolorem placeat earum exercitationem officiis ex qui labore repellendus veritatis deserunt, fugit nisi odit porro, blanditiis reprehenderit? Debitis placeat sequi, tempore nisi quidem expedita atque necessitatibus, magnam beatae accusantium neque aut illum non? Ea, cupiditate. Sit, obcaecati molestias culpa maiores id necessitatibus! Beatae incidunt ducimus aut laboriosam minima cum saepe cupiditate dicta! Deserunt placeat, ad ut nesciunt at ex nostrum aut dolorem iure sunt ducimus nulla minima explicabo commodi ipsam, enim odio optio velit voluptates molestias, harum exercitationem blanditiis accusantium cum! Doloremque sapiente accusamus esse excepturi reiciendis libero voluptate cupiditate exercitationem tempore quis sint fugiat et, illo assumenda debitis fugit ea. Fugiat consequuntur ipsa officiis recusandae amet ex? Sint commodi praesentium et dolore assumenda architecto, debitis quam ipsam ipsum labore porro ipsa, vero hic. Distinctio soluta minima repellat nam in voluptate ducimus sint odit, sed et laboriosam, magni sunt harum. Sunt quod delectus enim reprehenderit commodi. Illum distinctio dolore illo sequi accusamus, suscipit perferendis deleniti excepturi voluptas, omnis soluta ullam est commodi fugit aliquam vero provident eum culpa eos facilis blanditiis ipsam. Tempore adipisci nisi eius corrupti corporis, suscipit dolore sequi fugit, quos voluptate ullam nemo veniam ad esse sed expedita alias earum maxime reprehenderit possimus ut fuga nam nihil. Culpa quod at fugit quisquam, recusandae sequi, natus odio dolores temporibus aspernatur blanditiis minima! Corrupti voluptates blanditiis eveniet. In repudiandae sint aut, accusantium recusandae quod autem consequatur dignissimos qui temporibus fugiat cumque tempore omnis magni officia consectetur quisquam modi facere nam quas. Maxime cupiditate voluptates laboriosam maiores ex nihil unde nulla quia at qui! Molestiae repellat earum aut nemo fugiat reprehenderit facilis laborum distinctio itaque dignissimos adipisci assumenda consectetur possimus necessitatibus, repellendus temporibus quidem rerum sapiente commodi nostrum, in, cumque aperiam eius. Voluptatem nisi veritatis, pariatur veniam dignissimos tempora excepturi nobis accusantium distinctio, earum quam eos minus quae. Quasi quos, adipisci saepe perspiciatis voluptas mollitia nostrum dicta odit amet placeat vero suscipit libero itaque quia, nulla, impedit molestias ea officia. Illo corporis debitis totam unde delectus? Totam vero quod saepe eaque nostrum voluptas consequatur ex sunt suscipit nobis incidunt illo adipisci necessitatibus natus quidem quo ut perspiciatis numquam id veritatis voluptates, aut sequi alias. Velit a alias corporis voluptatum quasi veniam harum quod! In laborum quae ad suscipit ipsum nemo explicabo nobis, soluta eius quia sequi quas? Dolorem nesciunt beatae quibusdam. Possimus, veniam praesentium ut commodi cum veritatis accusamus reprehenderit, maxime molestias sint quisquam. Maiores autem eum consectetur fugiat commodi expedita eos minus pariatur, delectus quae modi sed eius sit voluptate necessitatibus? Minus unde quisquam alias laboriosam quasi nulla sequi recusandae blanditiis, velit fugit iure aut eos dignissimos magni nisi esse necessitatibus, nesciunt quaerat, iste provident voluptate tenetur dolorum! Quam cupiditate ipsum provident at? Eos quia vitae veniam, eum ab magni non doloribus esse excepturi, aspernatur alias repudiandae quas tenetur omnis a quo asperiores animi deleniti dolore dolor est atque! Autem expedita, repellat placeat, cupiditate inventore distinctio perspiciatis eveniet ipsa dolore nam cumque iste commodi corporis! Dignissimos ea voluptate excepturi iusto, modi perspiciatis aliquam velit alias provident delectus deleniti quos eum. Id asperiores libero cupiditate autem harum.
+        </p>
+    </div>
+    <div id="d1">1</div>
+    <div id="d2">2</div>
+    <div id="d3">3</div>
+</body>
+</html>

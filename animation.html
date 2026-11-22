@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+</head>
+<style>
+    #b
+    {
+        height: 200px;
+        width: 200px;
+        border: 2px solid black;
+        background-color: red;
+        animation-name: "riddhi";
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        
+    }
+    @keyframes riddhi{
+        from{
+            background-color: red;
+            transform: translatex(-100%);
+        }
+        to{
+            background-color: green;
+            transform: translatex(550%);
+        }
+    }
+   
+</style>
+<body>
+    <div id="b"></div>
+    
+</body>
+</html>

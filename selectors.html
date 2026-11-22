@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--types of selector-->
+    <!--1.universal selector=*-->
+    <!--2.elememnt selector=h1-->
+    <!--3.Id selector=#id name-->
+    <!--4.class selctor=.class name-->
+    <!--5.child selector=ol>li-->
+    <!--6.descendant selector=ol li-->
+    <!--7.attribute selectore=-->
+    <!--8.Group selectore=h1,h2,h3-->
+    <!--list priority * ni chhe-->
+    <!--elememnt and class ma thi hightest pririty class ni chhe-->
+    <!--id and class ma  id ni priority highest chee-->
+    <!--priority id>attribute>class>element>universal-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors</title>
+    <style>
+        /*universal selctor*/
+        *
+        {
+            margin:0px;
+            color:darkmagenta;
+    
+        }
+       
+        /*id selector*/
+        #silver
+        {
+            color: grey;
+        }
+        #gold
+        {
+            color:gold;
+            font-size:40px;
+
+        }
+        /*class selector*/
+        .A3
+        {
+            color:maroon;
+            font-size:20px;
+        }
+         /*element selector*/
+        h1
+        {
+            margin: 10px;
+            color: #587;
+        }
+        
+        ol li
+        {
+            color:blue;
+            font-size: 14px;
+        }
+        ol>li
+        {
+            color:rgb(255,160,100);
+            font-size:20px
+
+        }
+        /* aa vadi style bdhne lgu pde chhe*/
+        input[type="password"]
+        {
+            color:red;
+            background:white;
+            font-size:40px;
+        }
+        input[type="submit"]
+        {
+            color:red;
+            background-color: pink;
+            font-size:60px;
+        }
+        .pw
+        {
+            background-color: aqua;
+        }
+        h1,h2,h3
+        {
+            background-color:peru;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 class="A3">SELECTORS</h1>
+    <p id="gold">hello</p>
+    <p class="A3" id="silver">hello</p>
+    <p>hello</p>
+    <p class="A3">hello</p>
+    <p>hello</p>
+
+<ol>
+    <li>s1</li>
+    <li>s2
+        <ul>
+            <li>s22</li>
+            <li>s23</li>
+        </ul>
+    </li>
+    <li>s3</li>
+</ol>
+<br><br>
+<form mathod="get" action="#">
+    <input type="text" placeholder="enter name" >
+    <input type="password" placeholder="enter password" class="pw">
+    <input type="submit">
+</form>
+</body>
+</html>

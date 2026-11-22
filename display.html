@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display</title>
+    <style>
+        /*dislay:inline|block|inline-block|none|flex|grid*/
+        .s
+        {
+            height: 200px;
+            width: 200px;
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid red;
+            display:inline-block;
+          
+        }
+        .d
+        {
+            height: 200px;
+            width: 200px;
+             margin: 20px;
+            padding: 20px;
+            border: 2px solid green;
+            display: inline;
+        }
+        #a:hover
+        {
+            display: none;
+        }
+        .contener
+        {
+            width: 600px;
+            height: 600px;
+            border: 2px solid blue;
+            display: inline-flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction:row;
+            flex-wrap: wrap;
+            gap: 20px;
+            /*
+           flex-start=left align
+           flex-end=right lign
+           space-between=spce aapse
+           space-around=bdhine agd pachd space
+           space-evenly=exact spacre aave chrhhr
+           align-items=stretch(default)|center
+           flex-direction:row|row reverse|column|column-reverse
+           flex-wrap:nowrap|wrap|wrap-revese
+           order is used to arrange item that you want to sort
+
+           ==>grid property
+           grid-template-columns:length length length length
+            */
+
+        }
+       .box{
+        height: 100px;
+        width:100px;
+        border:2px solid red;
+       }
+       #b1
+       {
+        order: 1;
+       }
+       #b5
+       {
+        order: 5;
+       }
+       #b10
+       {
+        order: -1;
+       }
+       .gc
+       {
+        height: 600px;
+        width:600px;
+        border: 2px solid blue;
+        display: grid;
+       grid-template-columns: auto auto auto; 
+       grid-template-rows: auto auto;
+
+      }
+      .gbox
+      {
+        
+        background-color:  aliceblue;
+        border: 2px solid darkmagenta;
+      }
+      
+      #g1
+      {
+        grid-column: 1/4;
+      }
+      #g2
+      {
+        grid-row:2/4;
+      }
+      #g3
+      {
+        grid-column: 2/3;
+      }
+      #g4
+      {
+        grid-column: 3/4;
+      }
+      #g5
+      {
+        grid-column: 2/3;
+      }
+      #g6
+      {
+        grid-column: 3/4;
+      }
+      #g7
+      {
+        grid-column: 1/4;
+      }
+    </style>
+</head>
+<body>
+    <span class="s" id="a">Hello</span>
+    <span class="s">Hello</span>
+    <div class="d" id="a">Hello</div>
+    <div class="d">Hello</div>
+    <!--.contener>.box{box-$}*10-->
+ <div class="contener">
+    <div class="box" id="b1">box-1</div>
+    <div class="box">box-2</div>
+    <div class="box">box-3</div>
+    <div class="box">box-4</div>
+    <div class="box" id="b5">box-5</div>
+    <div class="box">box-6</div>
+    <div class="box">box-7</div>
+    <div class="box">box-8</div>
+    <div class="box">box-9</div>
+    <div class="box" id="b100">box-10</div>
+ </div>
+ <br><br>
+ <div class="gc">
+    <div class="gbox" id="g1">box-1</div>
+    <div class="gbox" id="g2">box-2</div>
+    <div class="gbox"id="g3">box-3</div>
+    <div class="gbox"id="g4">box-4</div>
+    <div class="gbox"id="g5">box-5</div>
+    <div class="gbox"id="g6">box-6</div>
+    <div class="gbox"id="g7">box-7</div>
+
+ </div>
+</body>
+</html>

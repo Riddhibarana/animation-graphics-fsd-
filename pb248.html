@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #txt:active
+        {
+
+            background-color: lightgreen;
+        }
+        #pc:hover
+        {
+            font-size: large;
+        }
+        #l:hover
+        {
+            font-style: italic;
+            font-weight: bold;
+        }
+        .r:active+label
+        {
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <form id="a">
+        <fieldset>
+            <label >Name:</label>
+            <input type="text" id="txt">
+            <br><br>
+            <label>password:</label>
+            <input type="password" id="pc">
+             <br><br>
+            <lable>contact number:</lable>
+            <input type="tel" id="pc">
+             <br><br>
+            <lable>Gender:</lable>
+            <br><br>
+            <input type="radio" class="r" name="d" checked>
+            <label>female</label>
+            <br><br>
+            <input type="radio" class="r" name="d">
+            <label>Male</label>
+          
+        </fieldset>
+        <br><br>
+     <button id="l">submit</button>
+        <br><br>
+        <button id="l">reset</button>
+       
+    </form>
+</body>
+</html>
